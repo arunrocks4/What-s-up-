@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> assignment </title>
+
+</head>
+
+<body>
+
+<p> i am doing my assignment for practise</p>
+
+<p> writing code for the img tag</p>
+
+<p> wrting code  for alignment of the text center, left right</p>
+
+
+<p align="center"> writing code for the alognment tag</p>
+ i am doing my assignment for practise
+ </br>
+writing code for the img tag
+<div>
+wrting code for alignment of the text center, left right
+<p align="center">  this is my tag for the text alignment</p>
+
+
+<p align="center"<img src="pic.jpg" width="100px" height="100px" alt="pic"/></p>
+
+<!-- writing code for the border for the image-->
+
+
+
+
+<p> wrting code  for alignment of the text center, left right of an image</p>
+
+<p align="center"><img border="1" src="pic.jpg" width="100px" height="100px" alt="pic"/></p>
+
+<p> wrting code  for inserting the image from thw website</p>
+
+<img src="http://www.everymanit.com/wp-content/pictures/logo.jpg" width="100px" height="100px"/>
+
+
+
+<p> writing the code for the opening the link in the web site</p>
+<a href="https://www.youtube.com/watch?v=fLexgOxsZu0" target="_blank"> click on the link</a>
+
+<p> writing the code for the table tag</p>
+
+<table border="1px">
+
+<tr>
+
+<td>  one <td>  <td>  one <td>
+</tr>
+
+
+<tr>
+
+<td>  two <td>  <td>  two <td>
+</tr>
+
+</table>
+
+
+
+<p> writing the code for the ordered list</p>
+
+<ol type="A"> <li >  arun</li>  <li> ram</li>  </ol>
+
+
+
+
+
+<ol> 
+<li>one   </li>
+<li>  two </li>
+<li>   three</li>
+
+</ol>
+<ul>
+<li> four  </li>
+<li>  five </li>
+<li>   six</li>
+</ul>
+
+<button type=”button”>click me</button>
+
+<br>
+
+<input type=”button”>click on this button</input>
+
+<br>
+
+<input type=”text”> </text>
+
+<br>
+
+<input type=”text” placeholder=name></text>
+<br>
+
+<input type="file"></input>
+
+ 
+
+ <textarea rows="6" columns="10"></textarea>
+ <br>
+
+ DOB
+ 
+
+ <select>
+<option value="jan">jan</option>
+<option value="feb">feb</option>
+<option value="march">march</option>
+<option value="march"> march</option>
+
+
+</select>
+
+<input type="text" placeholder="day"/>
+<input type="text" placeholder="year"/>
+
+<p> radio buttion</p>
+
+<input type="radio" name="gender" value="male"/> male
+
+<br>
+
+<input type ="radio" name="gender" value="female"/>female
+<br>
+
+<input type="radio" name="gender" value="other"/> other
+
+
+<p> check box</p>
+
+<input type="checkbox" value="btech"/>btech
+<input type="checkbox" value="MBA"/>MBA
+<input type="checkbox" value="Masters"/>Masters
+
+<p> list box control</p>
+
+<select multiple="multiple">
+<option value="text1">text1 </option>
+<option value="text2">text2</option>
+<option value="text3">text3</option>
+<option value="text4">text4</option>
+<option value="text5">text5</option>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
