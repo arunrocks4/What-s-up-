@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title> </title>
+</head>
+<body  ng-init="myname=[{fname: 'arun,lname:'B'},{fname:'raju',lname:'B'}]">
+<table>
+	
+<thead>
+	<tr>
+		
+
+<td>
+	
+first Nmae
+
+</td>
+<td>
+	
+Last Name
+
+</td>
+
+
+	</tr>
+
+
+
+</thead>
+<tbody>
+	<tr ng-repeat="name in mynames">
+		<td>{{ name.fname}}</td>
+		<td>{{name.lname}}</td>
+
+	</tr>
+
+</tbody>
+
+
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js
+"></script>
+<script>
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title></title>
+
+
+</head>
+<body ng-controller="myCtrl">
+
+<input type="text" ng-model="name"/>
+
+<input type="button" value="Click" ng-click="myFun();"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+
+
+</script>
+
+
+<script>
+	var myapp = angular.module("myApp", []);
+
+	myapp.controller("myCtrl", function ($scope){
+		$scope.myFun= function(){
+			$scope.name="this is first angular class";
+		}
+
+	});
+</script>
+
+</body>
+</html>

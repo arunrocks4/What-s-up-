@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>
+		{{mytitle}}
+
+	</title>
+	
+</head>
+<body ng-controller="myCtrl">
+
+
+
+
+<ul style="list-style-type:none; ">
+	<li>    <a href="#!home">home</a></li>
+	<li><a href="#!products">products</a></li>
+	<li><a href="#!services">services</a></li>
+	<li><a href="#!contactus">contactUs</a></li>
+
+
+
+
+</ul>
+
+<div ng-view></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>

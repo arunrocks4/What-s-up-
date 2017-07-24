@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body ng-app="sampleApp">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+<script src="jquery-3.2.1.min.js"></script>
+
+<h1>Arun angular js view concept</h1>
+
+<div class="container">
+	<li><a href="#NewEvent"> Add New Event</a>  </li>
+	<li><a href="#DisplayEvent">Display Event</a></li>
+<div ng-view> </div>
+<script >
+Var sampleApp = angular.module('sampleApp',['ngRoute']);
+sampleApp.config(['$routeProvider', function($routeProvider){
+	$routeProvider.
+	when('/NewEvent',{
+		templateUrl:'add_event.html',
+		controller:'AddEventController'}).
+	when('/DisplayEvent',{
+		templateUrl:'show_event.html',
+		controller:'ShowDisplayController'
+	}).
+	otherwise({
+		redirectTo:'/DisplayEvent'
+	});
+}]);
+sampleApp.controller('AddEventController', function($scope){
+	$scope.message='This is to Add a new Event';
+
+});
+sampleApp.controller('ShowDisplayController', function
+	($scope){
+		$scope.message='this is display an event';
+
+	});
+
+</script>
+</div>
+
+</body>
+</html>

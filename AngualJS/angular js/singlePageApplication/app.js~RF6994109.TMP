@@ -1,0 +1,37 @@
+// JavaScript source code
+var myapp =angular.module("myApp",[]);
+myapp.config(["$routeProvider",function($routeProvider{
+	$routeProvider
+	.when("/home",
+		{templateUrl:"temps/home.html",
+		contoller:"HomeCtrl",
+		title:"Home"})
+	.when("/products", 
+	 	{templateUrl:"temps/products.html",
+	 	contoller:"ProdCtrl",
+	 	title:"Products"})
+	.when("/services",
+		{templateUrl:"temps/services.html",
+		contoller:"ServCtrl",
+		title:"Home"})
+	.when("/contact",
+		{templateUrl:"temps/contactus.html",
+		contoller:"ContactCtrl",
+		title:"contactus"})
+	.otherwise("/");
+}]);
+// code to display the title
+myApp.run(['$rootScope',function($rootScope){
+	$rootScope.$on('$routeChangeSuccess',function(event,current,previous){
+		$rootScope.mytitle=current.$$route.title;
+	});
+}]);
+
+myapp.controller("myCtrl",function($scope){
+
+});
+
+myapp.controller("myCtrl",function($scope){
+	$scope.portal="200";
+
+});

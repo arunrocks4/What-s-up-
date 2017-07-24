@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>  my data</h1>
+<div ng-app="DemoApp" ng-controller="DemoCtrl">
+<form>
+	&nbsp;Topic Description:<br><br>
+	Name: <input type="text" ng-model="pname" value="Guru99"><br>
+	Topic:<br> &nbsp;
+
+	<select ng-model="Topics">
+
+	<option> {{Topics.option1}}    </option>
+	<option> {{Topics.option2}}    </option>
+
+	</select>
+</form>
+</div>
+
+<script>
+	var app =angular.module('DemoApp',[]);
+	app.controller('DemoCtrl',function($scope){
+		$scope.pName="Guru99";
+
+		$scope.Topics=
+		{
+			option1:"Controller",
+			option2:"Models"
+		};
+	});
+
+
+</script>
+</body>
+</html>
