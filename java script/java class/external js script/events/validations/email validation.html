@@ -1,0 +1,166 @@
+﻿<!doctype html>
+<html>
+<head>
+	
+<title>    </title>
+
+</head>
+
+
+
+<body>
+<h1>Creat your Google Account</h1>
+
+<table>
+	<tr>
+		<td> First name</td>
+		<td>
+		<input type="text" placeholder="First Name" id="txtfname"/>
+		</td>
+	</tr>
+		<tr>
+		<td> Last name</td>
+		<td>
+		<input type="text" placeholder="Last Name" id="txtlname"/>
+
+		</td>
+	</tr>
+		<tr>
+		<td> User name</td>
+		<td>
+		<input type="text" placeholder="User Name" id="txtuname"/>
+		</td>
+	</tr>
+		<tr>
+		<td> password</td>
+		<td>
+		<input type="password" placeholder="password" id="txtpassword"/>
+		</td>
+	</tr>
+		<tr>
+		<td> Confirm Password</td>
+		<td>
+		<input type="password" placeholder="Confirm Password" id="txtcp"/>
+		</td>
+	</tr>
+		<tr>
+		<td> DOB</td>
+		<td>
+		<input type="text" placeholder="DOB" id="txtdob"/>
+		</td>
+	</tr>
+		<tr>
+		<td> Gender</td>
+		<td>
+		<select id="ddlgender">
+		<option>male</option>
+		<option>Female</option>
+		<option>Other</option>
+			
+		</select>
+		</td>
+	</tr>
+	<tr>
+	<td> Mobile</td>
+	<td>
+	<input type="text" placeholder ="Mobileno" id="txtmobile"/>	
+	</td>
+
+
+	</tr>
+
+
+<tr>   <td>Current Email Address</td>
+
+<td>
+	<input type="text" placeholder="Current Email" id="txtce"/>
+</td>
+</tr>
+<tr>
+
+<td> <input type="button" value="Save" onclick="validateForm();" /></td>
+</tr>
+
+</table>
+
+<script>
+function validateForm() {
+	var fname=document.getElementById("txtfname").value;
+	var lname=document.getElementById("txtlname").value;
+	var uname=document.getElementById("txtuname").value;
+	var password=document.getElementById("txtpassword").value;
+	var confirmpass=document.getElementById("txtcp").value;
+	var dob=document.getElementById("txtdob").value;
+	var gender=document.getElementById("txtdob").value;
+	var mobileno=document.getElementById("txtmobile").value;
+	var currentemail=document.getElementById("txtce").value;
+	var emailexp=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+
+
+	if(fname==""){
+		alert("please enter First Name");
+
+	}
+	else if(lname==""){
+		alert("please enter Last Name");
+	}
+	else if (uname!=""){
+		if (password!=""){
+			if (confirmpass !=""){
+				if(password==confirmpass){
+					if(dob!=""){
+						if(gender!="--Select Gender--"){
+							if(mobileno !=""){
+								if(currentemail!=""){
+									if(emailexp.test(currentemail)){
+											alert("Success........");
+
+
+									}
+									else{
+										alert("please enter correct email format(ex:arun@gmail.com)");
+										
+
+									}
+									
+
+								}
+								else{
+									alert("please enter current email adddress");
+								}
+
+							}
+							else{
+								alert("please enter Mobileno");
+							}
+
+						}
+						else{
+							alert("please select gender");
+						}
+
+					}
+					else{
+						alert("please enter Date of birth");
+					}
+
+				}
+				else{
+					alert("password not matching");
+				}
+			}
+		}
+		
+
+	}
+	else{
+		alert("please enter user name");
+	}
+	
+}
+
+</script>
+ 
+</body>	
+
+</html>

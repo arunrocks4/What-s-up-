@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Rocket design -Mobile WEb Design Services</title>
+	<lnk rel="stylesheet" type="text/csss" href="style.css"/>
+	<link herf="css/font-awesome.min.css" rel="stylesheet"/.
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+
+<style>
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+*{
+margin:0;
+padding:0;
+border:0;
+
+}
+
+body{
+background:green;
+color:blue;
+font-family: 'Alegreya', sans-serif;
+margin:0;
+}
+
+h2{
+	font-size:250%;
+	font-weight:700;
+	text-align: center;
+	padding-top:2%;
+	color:orange;
+
+}
+h3{
+font-size:175%;
+line-height:155%;
+padding:5% 0;
+font-weight:400;
+color:brown;
+}
+p{
+font-family: 'Alegreya', sans-serif;
+color:blue;
+	font-size:160%;
+	line-height:15o%;
+	padding:3%;
+	text-indent:2%;
+	text-align:justify;
+
+}
+img{
+	max-width: 100%;
+	height:auto;
+	width:auto;
+	margin-bottom:-4px;
+
+}
+header{
+background-color:red;
+width:100%;
+height:86px;
+
+
+}
+#header-inner{
+max-width:1200px;
+margin:0 auto;
+}
+#logo{
+	margin:20pzx;
+	float:left;
+	width:200px;
+	height:60px;
+	background:url(img/RD.png)no-repeat center;
+
+}
+/*--- start navigation----*/
+nav{
+	float:right;
+	padding:25px 20px 0 0 ;
+
+}
+#menu-icon{
+	display:hidden;
+	width:40px;
+	height:40px;
+	background: url(img/nav.png) center;
+
+}
+
+a:hover#menu-icon{
+border-radius:4px 4px 0 0;
+
+}
+ul{
+	list-style-type: none;
+
+}
+nav ul li{
+	fontsize:150%;
+	display:inline-block;
+	float:left;
+	padding:10px;
+
+}
+nav ul li a{
+	color:blue;
+
+}
+nav ul li a:hover{
+color:red;
+}
+.current{
+	color:blue;
+
+}
+
+/*-- end navigation---*/
+
+.banner{
+	width:100%;
+	background-color:blue;
+
+}
+.banner-inner{
+	max-width:1100px;
+	margin:0 auto;
+
+}
+.one-fourth{
+width:25%;
+float:left;
+text-align:center;
+
+}
+#html{
+	background-color:red;
+}
+#seo{
+	background-color:red;
+}
+#seo{
+	background-color:red;
+}
+#social{
+	background-color:red;
+}
+.one-fourth  i{
+color:red;
+font-size:500%;
+padding:13% 0 4% 0;
+}
+
+.inner-wrapper{
+	float:left;
+	width:100%;
+	background-color:red;
+
+}
+article{
+	float:left;
+	margin:0 auto;
+	width:50%;
+	height:auto;
+}
+#tablet{
+	background-color:red;
+
+}
+aside{
+	float:right;
+	margin:0 auto;
+	width:50%;
+	height:auto;
+}
+#tablet2{
+	background-color:red;
+	
+
+}
+#mobile{
+background-color:red;
+}
+.inner-wrapper-2{
+	float:left;
+	width:100%;
+	background-color:red;
+}
+
+.inner-wrapper-3{
+	float:left;
+	width:100%;
+	background-color:red;
+	}
+.one-third{
+	width:33.33333%;
+	float:left;
+	text-align:center;
+	}
+#google{
+	background-color:red;
+
+}
+#marketing{
+background-color:red;
+}
+#customers{
+background-color:red;
+}
+
+#smiley{
+	background-color:red
+	padding:0 0 1%;
+	clear:both;
+}
+
+/*--footer starting---*/
+
+footer{
+	background-color:red;
+	width:100%;
+}
+.social{
+	list-style-type:none;
+	text-align:center;
+
+}
+.social li{
+	display: inline;
+}
+.social i{
+	font-size:460px;
+	margin:1%;
+	padding:5% 5% 5% 4%;
+	color:red;
+
+}
+.social i:hover{
+	color:red;
+
+}
+footer.second{
+	border-top:1px solid red;
+	background-color:red;
+	max-height:55px;
+	
+	margin:0;
+
+
+}
+footer.second p{
+	padding:5px 0 9px 0;
+	text-align:center;
+
+}
+/*---media explanation---*/
+@media screen and (max-width:768px){
+	h2{
+		font-size:150%
+	}
+	h3{
+	font-size:125%
+	}
+
+	p{
+	font-size:120%
+	}
+	header{
+	position:absolute;
+	}
+	#logo{
+	
+	margin:15px 0 20 -25px;
+	background:url(img/RD_mobile.png) no-repeat center;
+	}
+	#menu-icon{
+		display:inline-block;
+	}
+	nav ul, nav:active ul{
+		display:none;
+		z-index:1000;
+		position:absolute;
+		padding:20px;
+		background:red;
+		right:20px;
+		top:60px;
+		border:3px solidred;
+		border-radius:2px 0 2px 2px;
+		width:50%;
+
+	}
+	nav:hover ul{
+		display:block;
+	}
+	nav li{
+		text-align:center;
+		width:100%;
+		padding:10px 0 ;
+
+	}
+	.banner{
+		padding-top:86px;
+
+	}
+	.one-fourth{
+		float:left;
+		width:100%;
+
+	}
+	.one-fourth i{
+		font-size:350%;
+		padding:4% 0 1% 0;
+		}
+
+	article{
+	width:100%;
+	
+	
+	}
+	aside{
+		width:100%;
+	}
+	.hand-mobile{
+		display:none;
+	}
+	.one-third{
+		width:100%;
+	}
+	.social i{
+		font-size:180%;
+	}
+}
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+<header>
+<div id="header-inner">
+<a href="index.html"id="logo"></a>
+<nav>
+<a href="#" id="menu-icon"></a>
+
+<ul>
+<li>  <a href="index.html" class="current">home</a> </li>
+<li>  <a href="#">skills</a> </li>
+<li>  <a href="#">portfolio</a> </li>
+<li>  <a href="#">out team</a> </li>
+<li>  <a href="#">contact</a> </li>
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+<!--end of header-->
+
+<section class="banner">
+<div class="banner-inner">
+
+<img src="rocket_design.png"/>
+
+
+
+
+</div>
+
+
+</section>
+<!--banner ends-->
+<section class="one-fourth" id ="html">
+<td> <i class="fa fa-html5"> </i> </td>
+<h3>HTML</h3>
+
+</section>
+<section class="one-fourth" id="css">
+<td><i class="fa fa-css3"> </i> </td>
+<h3>CSS</h3>
+
+</section>
+<section class="one-fourth" id="seo">
+<td><i class="fa fa-search"> </i> </td>
+<h3>  SEO</h3>
+
+</section>
+
+<section class="one-fourth" id="social">
+<td><i class="fa fa-users"> </i> </td>
+<h3>  SOCIAL</h3>
+
+</section>
+<!--end four column section-->
+
+<section class="inner-wrapper">
+<article id="tablet">
+<img src="hand_ipad.png">
+</article>
+<aside id="tablet">
+<h2>  MOBILE.TABLET.DESKTOP.</h2>
+<p>   : Hyper Text Markup language it is used for the structuring and presenting the data or content on the world-wide web www.
+By using HTML, we can develop the web page by writing the code.
+There are many software’s for the developing the code in them visual studio is used to create the html and CSS and java scripts.
+</p>
+<aside>
+</section>
+
+<section class="inner-wrapper-2">
+<article id="moble">
+<h2>ACROSS EACH DEVICE   </h2>
+<p> : Hyper Text Markup language it is used for the structuring and presenting the data or content on the world-wide web www.
+By using HTML, we can develop the web page by writing the code.
+There are many software’s for the developing the code in them visual studio is used to create the html and CSS and java scripts.
+</p>
+
+</articel>
+<aside class:"hand-moble">
+
+<img src="hand_mobile.png">
+</aside>
+
+
+</section>
+
+
+<section class="inner-wrapper">
+<articel>
+<img src="desktop.png"/>
+
+</articel>
+<aside id="desktop">
+<p>: Hyper Text Markup language it is used for the structuring and presenting the data or content on the world-wide web www.
+By using HTML, we can develop the web page by writing the code.
+There are many software’s for the developing the code in them visual studio is used to create the html and CSS and java scripts.
+
+</p>
+</aside>
+
+</section>
+<!-- end of the two column section-->
+
+<section class="inner-wrapper-3">
+<section class="one-third" id="google">
+<h3> GOOGLE SEARCH</h3>
+
+<p>  : Hyper Text Markup language it is used for the structuring and presenting the data or content on the world-wide web www.
+By using HTML, we can develop the web page by writing the code.
+There are many software’s for the developing the code in them visual studio is used to create the html and CSS and java scripts.
+</p>
+ 
+
+</section>
+<section class="one-third" id="marketing">
+<h3> MARKETING  </h3>
+<p> : Hyper Text Markup language it is used for the structuring and presenting the data or content on the world-wide web www.
+By using HTML, we can develop the web page by writing the code.
+There are many software’s for the developing the code in them visual studio is used to create the html and CSS and java scripts.
+  </p>
+
+</section>
+<section class="one-third"id="customers">
+<h3> CUSTOMERS </h3>
+<p>  : Hyper Text Markup language it is used for the structuring and presenting the data or content on the world-wide web www.
+By using HTML, we can develop the web page by writing the code.
+There are many software’s for the developing the code in them visual studio is used to create the html and CSS and java scripts.
+ </P>
+
+
+</section>
+
+</section>
+
+<!-- end of the section of three column-->
+
+
+<section id="smiley">
+<h2> :)</h2>
+
+
+
+</section>
+
+<!-- end of smile face-->
+
+<footer>
+<ul class="social">
+<li> <a href="https://www.facebook.com/w3newbie" target="_blank"><i class="fa fa-facebook"></i> </a></li>
+
+<li> <a href="https://plus.google.com/+DrewRyan_w3/posts"><i class="fa fa-google-plus"></i></a><li>			 
+<li>  <a href="https://twitter.com/DrewOnCue"><i class="fa fa-twitter"></i></a> </Li>
+<li> <a href="https://youtube.com/user/DrewOnCue"><i class="fa fa-youtube"></i></a></li>
+<li>  <a href="https://www.instagram.com/drew_ryan_/"><i class="fa fa-instagram"></i></a> </li>
+
+</ul>
+
+</footer>
+<!-- end of footer section-->
+<footer class="second">
+<p> &copy;Rocket design  </p>
+</footer>
+<!-- footer second end-->
+
+
+</body>
+</html>

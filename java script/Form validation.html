@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	
+<title>learning javascript</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+
+
+<body>
+<div class="header">
+<h1 id="heading">              learning javascript</h1>   
+<p> with arun bondakadi</p>
+
+
+</div>
+<div class="container">
+<form method="post"	action="something.php" name="myForm" onsubmit="return validateForm()"> 
+<div>
+<label>First Name</label>
+<input type="text" name="firstName" id="firstName"/>
+
+
+
+
+</div>
+<br/>
+<div>
+	
+<label>Last Name</label>
+<input type="text" name="lastName" id="lastName"/>
+
+</div>
+<br/>
+
+<input type="submit" value="submit"/>
+</form>
+</div>
+<script>
+function validateForm(){
+	var firstName= document.forms["myForm"]["firstName"].value;
+
+	if(firstName == null || firstName == ""){
+
+		alert("First Name is required");
+		return false;
+	}
+}
+
+</script>
+ 
+</body>	
+
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+</head>
+<body>
+
+<input type="button" value="Create Object" onclick="funObjectdt();" />
+<p id="p1"></p>
+
+
+
+<script>
+function funObjectdt(){
+	var myobject=[{firstname:"arun",lastname:"bind",mobile:"665656565",email:"sfs@gmail.com"},
+	              {firstname:"arun",lastname:"bind",mobile:"665656565",email:"sfs@gmail.com"},
+	              {firstname:"arun",lastname:"bind",mobile:"665656565",email:"sfs@gmail.com"},
+	              {firstname:"arun",lastname:"bind",mobile:"665656565",email:"sfs@gmail.com"}]
+
+
+	
+
+	var mytable="<table>";
+	mytable+="<tr><td> firstname </td> lastname<td>  </td><td> mobile </td><td>email  </td>                                    </tr>"
+
+	for (var i=0; i<myobject.length;i++){
+		
+
+		mytable+="<tr><td>"+myobject[i].firstname+"</td><td>"+myobject[i].lastname+"</td><td>"+myobject[i].mobile+"</tb><tb>"+myobject[i].email+"</td></tr>"
+	}
+
+	mytable +="</table>";
+	document.getElementById("p1").innerHTML=mytable;
+
+
+	}
+
+
+
+</script>
+
+
+
+</body>
+</html> 

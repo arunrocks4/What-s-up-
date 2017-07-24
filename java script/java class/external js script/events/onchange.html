@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+
+</head>
+<body>
+
+select your city:<select id="ddlcities" onchange="getselectedcity();">
+	<option>   mass </option>
+	<option>  cannada  </option>
+	<option>us</option>
+	<option>chaitanyapuri</option>
+	<option>hyderabad</option>
+
+</select>
+
+<p id="p1"></p>
+
+<script>
+function getselectedcity(){
+	var mycity=document.getElementById("ddlcities").value;
+	document.getElementById("p1").innerHTML="my city is:-"+mycity;
+
+
+
+}
+
+
+</script>
+
+
+
+</body>
+</html> 

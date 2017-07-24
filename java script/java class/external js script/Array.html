@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+</head>
+<body>
+
+
+
+<input type="button" value ="create array" onclick="createarray();"/>
+<p id="p1">  </p>
+
+
+<script>
+function createarray(){
+var cities=["hyderabad","bangalore","chennai","pune"];
+
+
+
+
+ // for length document.getElementById("p1").innerHTML = cities.length;
+ var mylist="<ol>";
+ for(var i=0; i<cities.length;i++){
+ 	mylist+=  "<li>"+ cities[i]+"</li>";
+ }
+ mylist+="</ol>";
+ document.getElementById("p1").innerHTML=mylist;
+}
+
+</script>
+
+
+
+</body>
+</html> 
